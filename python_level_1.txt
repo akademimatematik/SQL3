@@ -1,0 +1,8 @@
+n, candid="") :
+    if len(remain) == 0 :
+        print(candid)
+    for i in range(len(remain)) :
+        newcandid = candid + remain[i]
+        newremain = remain[0:i] + remain[i+1:]
+        perm(newremain,newcandid)
+perm("new")
